@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+:root {
+    --first: #F9E4D4;
+    --second: #D67D3E;
+    --third: #9C0F48;
+    --fourth: #470D21;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+/* main container*/
+#main {
+    background-color: var(--fourth);
+}
+/*Styling the navigation bar*/
+#navbar {
+    background-color: var(--second);
+    min-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+}
+.nav-item a{
+    text-decoration: none;
+    color: var(--first);
+    padding: 20px;
+    
+   
+}
+.nav-item {
+    padding: 20px 10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.nav-link:hover, #project-btn:hover{
+    background-color: var(--fourth);
+    color: var(--third);
+}
+
+/* styling the welcome section*/
+#welcome-section {
+    padding-top: 200px;
+    height: 100vh;
+    text-align: center;
+}
+.hello{
+    color: var(--first);
+    font-size: 4rem;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+.web{
+    color: var(--second);
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+#projects {
+    background-color: var(--third);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+.project-header {
+    color: var(--first);
+    padding: 20px 0 40px;
+    margin: 40px;
+    font-size: 2rem;
+
+}
+.card-container{
+    display: flex;
+    margin: 0 5px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.card-img{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 20px;
+  }
+  
+ .card:hover {
+    box-shadow: 0 20px 25px 0px rgba(97, 23, 23, 0.2);
+  }
+  
+  .container {
+    text-align: center;
+    background-color: var(--fourth);
+    padding: 30px 0px;
+  }
+.card-link{
+    text-decoration: none;
+    color: var(--first);
+    font-size: large;
+}
+
+#project-btn{
+    background-color: var(--second);
+    color: var(--first);
+    font-size: 1.2rem;
+    border: 0;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin: 20px 0px 80px ;
+}
+
+#profile{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.offer{
+    color: var(--first);
+    text-align: center;
+    margin: 80px 0 50px;
+}
+.offer-head{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.offer-tail{
+    font-weight: lighter;
+}
+.socials{  
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icon{
+    margin: 15px;
+    text-decoration: none;
+    color: var(--first);
+    font-size: 1.2rem;
+}
+.icon a{
+    text-decoration: none;
+    color: var(--first);
+}
+.fas, .fab{
+    margin: 5px;
+}
+#footer{
+    border-top: solid 5px var(--second);
+    padding: 30px;
+    text-align: center;
+    color: var(--second);
+}
+
+@media screen and (max-width: 837px) {
+    .card-img{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+}
