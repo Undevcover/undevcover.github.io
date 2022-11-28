@@ -163,6 +163,11 @@
     color: var(--second);
 }
 
+#project-btn a{
+    text-decoration: none;
+    color: var(--first);
+}
+
 @media screen and (max-width: 837px) {
     .card-img{
         width: 100%;
